@@ -7,8 +7,8 @@ First phase
 We are not setting out to implement the war just yet, just the inheritance Hierarchy.
  
 CREATURE -
-fields - (int) hitpoints (int) strength default to 10 each, can never be less than 5
-methods - int damage() a random number between 1 and strength
+* fields - (int) hitpoints (int) strength default to 10 each, can never be less than 5
+* methods - int damage() a random number between 1 and strength
  
 HUMAN
 a basic creature, max str(18) max hp(30)
