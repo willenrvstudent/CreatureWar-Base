@@ -99,10 +99,10 @@ do this until one index is greater than the number of creatures in the army. A p
  
 for the battle,
 
-`while army1[index1]-> isAlive() and army2[index2]->isAlive()
+`while army1[index1]-> isAlive() and army2[index2]->isAlive()`
 
-     army1[index1]-> takeWound(army2[index2]->getDamage());
+     `army1[index1]-> takeWound(army2[index2]->getDamage());`
 
- army2[index2]->takeWound(army1[index1]->getDamange());`
+ `army2[index2]->takeWound(army1[index1]->getDamange());`
  
 When you fall out of the main loop you will not know if you left because Army 1 beat Army2 or vice versa (or if everyone fell in battle). Be sure to issue an after action report letting me know who won.
