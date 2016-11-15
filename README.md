@@ -105,4 +105,5 @@ for the battle,
 
  `army2[index2]->takeWound(army1[index1]->getDamange());`
  
+
 When you fall out of the main loop you will not know if you left because Army 1 beat Army2 or vice versa (or if everyone fell in battle). Be sure to issue an after action report letting me know who won.
