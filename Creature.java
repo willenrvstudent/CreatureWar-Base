@@ -39,6 +39,7 @@ public abstract class Creature
     public Creature (int str, int hp) {
        this.str = str;
        this.hp = hp;
+       max_hp = hp; 
     }
     
     
@@ -64,7 +65,10 @@ public abstract class Creature
         {
             return true;
         }
-        return false; 
+        else
+        {
+            return false;
+        }
     }
     
     /**
@@ -77,7 +81,10 @@ public abstract class Creature
         {
             return false; 
         }
-        return true;
+        else
+        {   
+            return true;
+        }
     }
     
     
@@ -87,8 +94,7 @@ public abstract class Creature
      * @param damage value to remove from hit point count
      */
     public void takeDamage(int damage) {
-        int damageTaken = damage; 
-        max_hp = max_hp - damage;
+        hp -= damage;
     }
     
 }
