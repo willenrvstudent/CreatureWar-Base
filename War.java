@@ -10,13 +10,6 @@ public class War
     ArrayList<Creature> army1;
     ArrayList<Creature> army2;
     Random rand;
-    
-   
-    
-    
-    
-    
-
 
     /**
      * Constructor for objects of class War
@@ -64,26 +57,26 @@ public class War
         
     }
     
+    
+    /**
+     * Creates a war between both armies and reports which army won.
+     */
     public void warTime()
     {
+        armyAssemble(); 
         Creature c1 = null;
         Creature c2 = null; 
         
             
             do 
             {
-                // if(army1.isEmpty())
-                // {
-                    // break;
-                // }
-                
-                // if(army2.isEmpty())
-                // {
-                    // break;
-                // }
-                
+               
                 do
-                {
+                {   
+                    if(army1.size() == 0 || army2.size() == 0)
+                    {
+                       break; 
+                    }
                     army1.get(0).takeDamage(army2.get(0).damage());
                     army2.get(0).takeDamage(army1.get(0).damage());
                 
@@ -97,15 +90,15 @@ public class War
                         army2.remove(0);
                     }
                     
-                    // if(!(army1.isEmpty() || army2.isEmpty()))
-                    // {
-                        // break; 
-                    // }
+                    if(army1.size() == 0 || army2.size() == 0)
+                    {
+                       break; 
+                    }
                
                   
                 } while((army1.get(0).isAlive() && army2.get(0).isAlive()));
                
-            } while(!(army1.isEmpty() && army2.isEmpty()));
+            } while(!(army1.isEmpty() || army2.isEmpty()));
 
         
         if(army1.isEmpty() && army2.isEmpty())

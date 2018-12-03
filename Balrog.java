@@ -2,8 +2,8 @@
 /**
  * Write a description of class Balrog here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Willen Leal
+ * @version 12.03.2018
  */
 public class Balrog extends Demon
 {

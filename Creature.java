@@ -7,8 +7,8 @@
  * the creature is alive or dead. The creature is also responsible for calculating
  * damage delivered based on the creature's strength (1 to str) 
  * 
- * @author (your name here)
- * @version (version number or date here)
+ * @author Willen Leal
+ * @version 12.03.2018
  */
 
 import java.util.Random;
